@@ -9,14 +9,14 @@
 	
 	<persistence-unit name="mysql">
         <properties>
-           <!-- 
+           
             <property name="hibernate.ejb.cfgfile" value="/hibernate.cfg.xml"/>
             <property name="hibernate.hbm2ddl.auto" value="create"/>
-            -->
+            
             <property name="hibernate.archive.autodetection" value="class, hbm"/>
             <property name="hibernate.show_sql" value="true"/>
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
-            <property name="hibernate.connection.password" value="yourPassword"/>
+            <property name="hibernate.connection.password" value="Calinou%2001"/>
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost/mydb"/>
             <property name="hibernate.connection.username" value="root"/>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>

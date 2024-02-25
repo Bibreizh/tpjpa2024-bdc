@@ -31,8 +31,8 @@ public class JpaTest {
 			Edao.save(emp);
 		}
 		Ticket ticket = new TicketFeature();
-		ticket.setName("Test ticket Feature DAO");
-		Tdao.save(ticket);
+		/*ticket.setName("Test ticket Feature DAO");
+		Tdao.save(ticket);*/
 		List<Ticket> listeT = emp.getTickets();
 		listeT.add(ticket);
 		emp.setTickets(listeT);

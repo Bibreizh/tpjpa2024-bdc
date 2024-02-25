@@ -19,6 +19,6 @@ public class EmployeDao extends AbstractJpaDao<Long, Employe>{
 	}
 	
 	public List<Ticket> getTicketAttribueToEmploye(Employe emp){
-		return EntityManagerHelper.getEntityManager().createQuery("Select TICKETS_ID from EMPLOYE_TICKET where EMPLOYE_ID = :id ").setParameter("id", emp.getId()).getResultList();
+		return EntityManagerHelper.getEntityManager().createQuery("Select TICKETS_ID from AttributionTickets where EMPLOYE_ID = :id ").setParameter("id", emp.getId()).getResultList();
 	}
 }

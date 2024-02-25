@@ -12,6 +12,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 import jakarta.persistence.Inheritance;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
@@ -55,6 +56,7 @@ public class Ticket implements Serializable{
 	}
 
 	@ManyToMany(cascade = CascadeType.PERSIST)
+	@JoinTable(name="AttributionTickets")
 	public List<Employe> getEmployes() {
 		return employes;
 	}
